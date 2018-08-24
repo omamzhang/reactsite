@@ -1,0 +1,86 @@
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+}
+.App-header {
+  background-color: #222;
+  padding: 5px 20px;
+  color: white;
+  flex-basis: 34px;
+  box-shadow: 0 0 15px 5px #ccc;
+  position: fixed;
+  width: 100%;
+}
+.App-header .App-title {
+  display: inline-block;
+  font-size: 1.5em;
+}
+.App-header .App-logo {
+  display: inline-block;
+  width: 34px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.App-header .App-logo img {
+  width: 100%;
+  animation: App-logo-spin infinite 20s linear;
+  border-radius: 50%;
+}
+.App-header .App-helper {
+  display: inline-block;
+  float: right;
+  margin-right: 30px;
+  line-height: 34px;
+}
+.App-header .App-intro {
+  font-size: large;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App-bodyer {
+  flex: 1;
+  display: flex;
+  padding-top: 50px;
+}
+.App-container {
+  display: flex;
+  flex: 1;
+  text-align: left;
+  justify-content: flex-start;
+}
+.App-container .App-menus {
+  flex-basis: 200px;
+  border-right: 1px solid;
+  margin-right: 20px;
+}
+.App-container .App-menus li {
+  padding: 0 10px;
+  line-height: 30px;
+}
+.App-container .App-menus li a {
+  display: block;
+  color: #333;
+}
+.App-container .App-menus li:hover {
+  background-color: #eee;
+}
+.App-container .App-menus li.active {
+  background-color: #ccc;
+}
+.App-container .App-content {
+  flex: 1;
+  display: flex;
+}
+.App-container .App-content .content-sidebar {
+  flex-basis: 150px;
+}
+.App-container .App-content .content-main {
+  flex: 1;
+}
